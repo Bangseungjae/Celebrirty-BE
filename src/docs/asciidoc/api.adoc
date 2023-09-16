@@ -1,0 +1,84 @@
+= 🐳 마이 셀럽 API 문서 🐳
+:toc: left
+:toclevels: 2
+:sectlinks:
+
+[[resources-celebrity]]
+== 셀럽
+=== 모든 셀럽 조회
+==== HTTP Request
+include::{snippets}/find-all-celebrity/curl-request.adoc[]
+
+==== HTTP Response
+include::{snippets}/find-all-celebrity/http-response.adoc[]
+include::{snippets}/find-all-celebrity/response-fields.adoc[]
+
+=== 셀럽 카운트 증가
+==== HTTP Request
+include::{snippets}/up-celebrity-count/http-request.adoc[]
+include::{snippets}/up-celebrity-count/request-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/up-celebrity-count/http-response.adoc[]
+include::{snippets}/up-celebrity-count/response-fields.adoc[]
+
+=== 셀럽 생성
+==== HTTP Request
+include::{snippets}/insert-celebrity/http-request.adoc[]
+include::{snippets}/insert-celebrity/path-parameters.adoc[]
+include::{snippets}/insert-celebrity/request-parts.adoc[]
+include::{snippets}/insert-celebrity/request-part-request-fields.adoc[]
+
+
+== 커뮤니티
+=== 커뮤니티 저장하기
+==== HTTP Request
+include::{snippets}/create-community/curl-request.adoc[]
+include::{snippets}/create-community/request-part-communityRequest-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/create-community/response-body.adoc[]
+include::{snippets}/create-community/response-fields.adoc[]
+
+
+=== 커뮤니티 댓글 달기
+==== HTTP Request
+include::{snippets}/write-comment/curl-request.adoc[]
+include::{snippets}/write-comment/path-parameters.adoc[]
+include::{snippets}/write-comment/request-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/write-comment/response-body.adoc[]
+include::{snippets}/write-comment/response-fields.adoc[]
+
+
+=== 커뮤니티 모두 조회
+==== HTTP Request
+include::{snippets}/find-all-community/curl-request.adoc[]
+
+==== HTTP Response
+include::{snippets}/find-all-community/response-body.adoc[]
+include::{snippets}/find-all-community/response-fields.adoc[]
+
+=== 커뮤니티 댓글 커서 페이징 조회
+==== HTTP Request
+include::{snippets}/comment-cursor-paging/http-request.adoc[]
+include::{snippets}/comment-cursor-paging/path-parameters.adoc[]
+include::{snippets}/comment-cursor-paging/form-parameters.adoc[]
+
+==== HTTP Response
+include::{snippets}/comment-cursor-paging/http-response.adoc[]
+include::{snippets}/comment-cursor-paging/response-fields.adoc[]
+
+==== HTTP Response
+include::{snippets}/insert-celebrity/http-response.adoc[]
+include::{snippets}/insert-celebrity/response-fields.adoc[]
+
+## 랭킹
+=== 전체 랭킹 조회
+==== HTTP Request
+include::{snippets}/find-all-rank/http-request.adoc[]
+
+==== HTTP  Response
+include::{snippets}/find-all-rank/http-response.adoc[]
+include::{snippets}/find-all-rank/response-fields.adoc[]
